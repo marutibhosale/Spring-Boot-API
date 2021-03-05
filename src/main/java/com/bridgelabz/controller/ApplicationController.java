@@ -15,7 +15,7 @@ public class ApplicationController {
 	@GetMapping("/status")
 	@ApiOperation(value = "API for checking the status.", 
 	notes = "API for checking the status of service working properly or not. If the message is displayed in response"
-			+ "with 200 status then the api is working properly.")
+			+ "with 200 status then the api is working correctly.")
 	public ResponseEntity<String> getApiStatus() {
 		return ResponseEntity.ok("Backend Working correctly");
 	}
