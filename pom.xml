@@ -11,6 +11,7 @@
 	<groupId>com.bridgelabz</groupId>
 	<artifactId>SpringBootDemoProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>SpringBootDemoProject</name>
 	<description>Spring boot demo project for deployement or other.</description>
 
