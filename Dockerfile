@@ -1,4 +1,5 @@
-FROM ubuntu
+#FROM ubuntu
+FROM 863522791199.dkr.ecr.us-east-1.amazonaws.com/cleancity/docker-io-cache@sha256:d5108131d876f68ea77d876a2aa236f69099c0e49a317a9a92afdbf1ce80d872
 RUN apt-get update && \
     apt-get install -y wget
 ARG JDK_VERSION=11.0.15
