@@ -15,5 +15,8 @@ RUN wget https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/${MA
 ENV M2_HOME=/opt/maven
 ENV MAVEN_HOME=/opt/maven
 ENV PATH=${M2_HOME}/bin:${PATH}
+COPY . /opt
+WORKDIR /opt
+RUN    mvn package -Dmaven.test.skip=true
 RUN mvn --version
 CMD ["sleep","infinity"]
